@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Sistema Oficina
+Exec=gnome-terminal -- bash -c "~/oficina.sh; exec bash"
+Icon=utilities-terminal
+Type=Application
+Terminal=true
