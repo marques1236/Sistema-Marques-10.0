@@ -1,0 +1,41 @@
+🛠️ GUIA RÁPIDO: SISTEMA MARQUES v10.0 (TAB A11 / A71)
+1. Instalação "Do Zero" (Novo Dispositivo)
+Abra o Termux e digite estes 3 comandos em ordem:
+
+    termux-setup-storage (Dê "Permitir" no Android)
+    pkg update && pkg upgrade
+    pkg install git util-linux rclone termux-api
+
+2. Configurar a Nuvem (Rclone)
+Comando: rclone config
+
+    Nome: gdrive
+    Tipo: Google Drive (procure o número na lista)
+    Escopo: 1 (Full Access)
+    Auto-config: y (Logue no navegador e dê "Permitir")
+
+3. Puxar o Script do GitHub
+Substitua USUARIO e REPO pelos seus dados:
+git clone https://github.com ~/Oficina
+cd ~/Oficina && chmod +x oficina.sh
+4. Atalho na Tela Inicial (Ícone)
+
+    Instale o app Termux:Widget.
+    No Termux: mkdir -p ~/.shortcuts
+    echo "bash ~/Oficina/oficina.sh" > ~/.shortcuts/Oficina
+    Adicione o Widget "Termux Shortcut" na tela inicial do Samsung.
+
+5. Diagnóstico de Erros (Se algo travar)
+
+    Sem som/bip: Verifique se o app Termux:API está instalado e com permissão de bateria "Irrestrita".
+    Erro de Backup: Verifique o rodapé do menu. Se estiver Vermelho, o Wi-Fi caiu ou o token do Google Drive expirou (rode rclone config e escolha edit para renovar).
+    Tabelas tortas: Diminua a fonte do Termux (gesto de "pinça" na tela) ou mude o tablet para o modo Paisagem (deitado).
+
+6. Comandos Úteis do Teclado (BT)
+
+    CTRL + C: Força o fechamento se o script travar.
+    CTRL + L: Limpa a sujeira da tela.
+    Seta para Cima: Recupera o último comando digitado.
+
+Dica de Ouro: Quando o Tab A11 chegar, a primeira coisa a fazer é o Passo 2. Sem o rclone configurado como gdrive, o script não conseguirá baixar seu banco de dados atualizado do A71.
+Como você já tem o GitHub, deseja que eu te passe os comandos específicos para "Subir uma Atualização" (Update) quando você fizer uma melhoria no código?
