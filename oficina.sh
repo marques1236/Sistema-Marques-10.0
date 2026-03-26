@@ -1,5 +1,17 @@
 #!/bin/bash
 
+#  SISTEMA MARQUES v10.0 - GESTÃO DE FROTA
+#  Copyright (C) 2024  LUÍS PEDRO PEREIRA MARQUES
+#
+#  Este programa é um software livre; você pode redistribuí-lo e/ou 
+#  modificá-lo sob os termos da Licença Pública Geral GNU como publicada 
+#  pela Free Software Foundation; tanto a versão 3 da Licença, ou
+#  (a seu critério) qualquer versão posterior.
+#
+#  Este programa é distribuído na expectativa de que seja útil,
+#  porém, SEM NENHUMA GARANTIA.
+
+
 # --- 1. CONFIGURAÇÃO DE AMBIENTE E CORES ---
 termux-setup-storage
 sleep 1
