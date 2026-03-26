@@ -2,6 +2,14 @@
 Versão 10.0 otimizada para Tab A11
 # 🛠️ Sistema Marques v10.0 - Gestão de Oficina
 
+⚡ Instalação Rápida
+Abra o seu terminal (Linux ou Termux) e cole o comando abaixo para instalar todas as dependências e preparar as pastas automaticamente:
+bash
+
+curl -sSL https://raw.githubusercontent.com | bash
+
+Use o código com cuidado.
+
 Sistema em Bash para controle de frota, estoque e revisões, otimizado para Android (Termux) e Tablets.
 
 ## 📋 Pré-requisitos
